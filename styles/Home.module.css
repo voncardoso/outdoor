@@ -1,12 +1,13 @@
 .container {
-  max-width: 1000px;
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
 }
 
 .info {
   padding: 0px 10px;
+  margin: 0px;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .titulo {
@@ -17,6 +18,7 @@
 }
 
 .subTitulo {
+  margin-top: 5px;
   font-size: min(5vw, 1.75rem);
   line-height: min(6vw, 2.375rem);
   font-weight: 500;
@@ -24,20 +26,330 @@
 }
 
 .imgespecialistas {
-  margin-top: 40px;
+  position: relative;
+  top: 4px;
+  margin-top: 30px;
   max-width: 850px;
   max-height: 350px;
   width: 100%;
   height: 100%;
 }
 
-.log {
+.imgespecialistasMulher {
+  display: none;
+}
+
+.logo {
   width: 100%;
+}
+
+.conectandoServicos {
+  background: #c5c5c5;
+  height: 595px;
+}
+
+.conectando {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.containerConectando {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 0px 10px;
+}
+
+.celular01 {
+  margin: 0 auto;
+  margin-top: min(8vw, 60px);
+  max-width: 352px;
+  max-height: 716px;
+  height: 100%;
+  width: 100%;
+  z-index: 2000;
+}
+
+.tituloConectando {
+  padding-top: 40px;
+  font-size: min(8vw, 2.75rem);
+  text-aling: center;
+  line-height: min(9vw, 3.75rem);
+  color: #69247c;
+}
+
+.infoConectando {
+  margin-top: min(8vw, 70px);
+}
+
+.ConectandoP {
+  font-size: min(6vw, 1.375rem);
+  color: #69247c;
+  font-weight: 600;
+  margin-bottom: min(8vw, 60px);
+}
+
+.ConectandoH2 {
+  font-size: min(7vw, 2rem);
+  margin-bottom: 80px;
+  color: #69247c;
+}
+
+.Servicos {
+  z-index: 1000;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0px 10px;
+}
+
+.tituloServicos {
+  padding-top: 40px;
+  font-size: min(9vw, 2.75rem);
+  text-aling: justify;
+  line-height: min(9vw, 3.75rem);
+  color: #69247c;
+  margin-bottom: 30px;
+}
+
+.servicosP {
+  font-size: 1rem;
+  line-height: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.servicosImagemProficionais {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  grid-column: 1 / 3;
+  padding: 0px 20px;
+  gap: 20px;
+}
+
+.servicosli {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.servicosImagens {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+
+.faixa {
+  width: 100%;
+  background: #c5c5c5;
+  height: max(350px, 10vw);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.celular02 {
+  position: relative;
+  margin: 0 auto;
+  margin-left: 100px;
+}
+
+.baixarAplicativo {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.aplicativo {
+  grid-column: 2 / 3;
+}
+
+.aplicativoH1 {
+  width: 540px;
+  margin-top: 80px;
+  font-size: min(8vw, 2.25rem);
+  font-weight: 600;
+  line-height: min(10vw, 2.625rem);
+  padding: 0px 0px;
+  color: #281a39;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  padding: 40px 10px 20px 10px;
+}
+
+.aplicativoH3 {
+  font-weight: 400;
+  font-size: min(5vw, 1.25rem);
+  line-height: min(9vw, 1.75rem);
+  padding: 0px 15px 0px 15 px;
+}
+
+.lojasApps {
+  display: flex;
+
+  gap: 40px;
+  margin: 20px auto 0px auto;
+  object-fit: cover;
+  padding: 10px;
+}
+.imgeApps {
+  max-width: 176px;
+  height: 55px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.lojasAppsLinks {
+  max-width: 176px;
+  height: 55px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.imgeAppsLink {
+  max-width: 176px;
+  height: 55px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.imgeAppsGooglePlay {
+  max-width: 176px;
+  height: 55px;
+  width: 100%;
+  cursor: not-allowed;
+}
+
+@media (max-width: 1122px) {
+  .celular02 {
+    width: 517px;
+    height: 645px;
+    rigth: -40px;
+    margin-left: 40px;
+  }
+}
+
+@media (max-width: 910px) {
+  .lojasApps {
+    justify-content: center;
+  }
+  .aplicativoH1 {
+    width: 540px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .aplicativoH3 {
+    text-align: center;
+  }
+  .faixa {
+    display: none;
+  }
+  .celular02 {
+    width: 517px;
+    height: 645px;
+    rigth: -40px;
+    margin-left: 20px;
+  }
+
+  .baixarAplicativo {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 876px) {
+  .celular02 {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .containerConectando {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: space-between;
+    padding: 0px 10px;
+  }
+  .celular01 {
+    display: none;
+  }
+
+  .conectandoServicos {
+    height: 100%;
+  }
+
+  .Servicos {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .ConectandoH2 {
+    margin-bottom: 60px;
+    color: #69247c;
+  }
+
+  .celular02 {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .imgespecialistas {
+    position: relative;
+    top: 4px;
+    margin-top: 30px;
+    max-width: 850px;
+    max-height: 350px;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+
+  .imgespecialistasMulher {
+    display: block;
+    margin: 30px auto 0px auto;
+    max-width: 200px;
+    max-height: 300px;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 540px) {
+  .aplicativoH1 {
+    width: 440px;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 
 @media (max-width: 500px) {
   .logo {
     width: 150px;
     height: 70px;
+  }
+}
+
+@media (max-width: 440px) {
+  .aplicativoH1 {
+    width: 340px;
+    margin: 0 auto;
+    text-align: center;
   }
 }
