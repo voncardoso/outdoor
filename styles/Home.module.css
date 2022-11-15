@@ -1,2 +1,43 @@
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
 
+.info {
+  padding: 0px 10px;
+}
 
+.titulo {
+  font-size: min(8vw, 2.75rem);
+  text-aling: center;
+  line-height: min(9vw, 3.75rem);
+  color: #69247c;
+}
+
+.subTitulo {
+  font-size: min(5vw, 1.75rem);
+  line-height: min(6vw, 2.375rem);
+  font-weight: 500;
+  color: #281a39;
+}
+
+.imgespecialistas {
+  margin-top: 40px;
+  max-width: 850px;
+  max-height: 350px;
+  width: 100%;
+  height: 100%;
+}
+
+.log {
+  width: 100%;
+}
+
+@media (max-width: 500px) {
+  .logo {
+    width: 150px;
+    height: 70px;
+  }
+}
